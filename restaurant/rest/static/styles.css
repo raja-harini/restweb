@@ -1,0 +1,170 @@
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #fafafa; /* Light background for a clean look */
+}
+
+/* Header section */
+header {
+    display: block;
+    align-items: center;
+    padding: 50px 30px;
+    background-color: #333;
+    color: #fff;
+    text-align: center; /* Center the header content */
+}
+
+.logo img {
+    display: block;
+    width: 250px; /* Adjust size for better proportion */
+    margin: 0 auto 20px auto; /* Center logo and add margin */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center navigation items */
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px; /* Add space between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    transition: background 0.3s ease, transform 0.3s ease; /* Add transition for hover effects */
+    font-size: 1.2rem;
+    font-weight: bold; /* Make links more prominent */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+/* Promo banner */
+.promo {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+    border-top: 5px solid #333; /* Add top border for distinction */
+}
+
+.promo h1 {
+    font-size: 3rem; /* Larger headline */
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.promo p {
+    font-size: 1.5rem;
+    color: #e60000; /* Red text for promotional effect */
+    margin-bottom: 25px;
+    font-style: italic; /* Add a style effect */
+}
+
+.promo img {
+    max-width: 100%; /* Make sure the banner image scales properly */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the banner */
+}
+
+/* Three columns layout */
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px; /* Provide spacing between columns */
+}
+
+.column {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    background-color: #fff; /* Add background for each column */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for each column */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.column img:hover {
+    transform: scale(1.05); /* Hover zoom effect on images */
+}
+
+.column h2 {
+    margin: 15px 0;
+    color: #333;
+    font-size: 2rem; /* Larger headings for clarity */
+}
+
+.column p {
+    font-size: 1rem;
+    color: #555; /* Slightly lighter text */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-left img {
+    width: 150px; /* Smaller footer logo */
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: right; /* Align the copyright text to the right */
+    color: #ccc; /* Light grey for footer text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .three-columns {
+        flex-direction: column;
+    }
+
+    .column {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .promo {
+        padding: 30px 20px; /* Adjust promo section padding for small screens */
+    }
+}
